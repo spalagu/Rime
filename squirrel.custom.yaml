@@ -1,0 +1,67 @@
+patch:
+  style:
+    color_scheme: mac_light
+    horizontal: true
+    inline_preedit: true                    # 内嵌编码（类似于原生输入法的样式）
+    candidate_format: "%c.%@ "              # 编号格式
+    font_face: "PingFangSC-Regular"         # 主字体，使用苹果系统字体
+    font_point: 14                          # 主字体大小
+    label_font_face: "PingFangSC-Light"     # 编号字体
+    label_font_point: 12                    # 编号字体大小
+    corner_radius: 6                        # 候选框圆角
+    border_height: 0                        # 去除边框
+    border_width: 0
+    margin_x: 12                           # 候选框横向边距
+    margin_y: 8                            # 候选框纵向边距
+    spacing: 10                            # 候选词间距
+    candidate_spacing: 24                   # 候选词横向间距
+    min_width: 160                         # 最小宽度
+    min_height: 0
+    line_spacing: 5                        # 行间距
+    base_offset: 6                         # 字基高度
+    candidate_list_layout: linear          # 线性布局
+    alpha: 0.92                            # 整体透明度调整为更清晰一些
+    shadow_size: 0.8                       # 阴影大小
+    shadow_offset_x: 0                     # 阴影X偏移
+    shadow_offset_y: 3                     # 阴影Y偏移
+
+  # 移除之前的按键延迟配置
+  recognizer:
+    patterns:
+      email: "^[A-Za-z][-_.0-9A-Za-z]*@.*$"
+      uppercase: "[A-Z][-_+.'0-9A-Za-z]*$"
+      url: "^(www[.]|https?:|ftp[.:]|mailto:|file:).*$|^[a-z]+[.].+$"
+
+  preset_color_schemes:
+    mac_light:
+      name: "仿 Mac 浅色"
+      author: "Assistant"
+      back_color: 0xEEF7F7F7              # 背景色透明度调整为 EE (93%)
+      border_color: 0xEEF7F7F7            # 边框色跟随背景
+      text_color: 0x424242                # 文字颜色
+      hilited_text_color: 0x000000        # 高亮文字颜色
+      candidate_text_color: 0x454545      # 候选词颜色
+      comment_text_color: 0x8E8E8E        # 注释文字颜色
+      hilited_candidate_back_color: 0xEEF58B4B  # 选中项背景透明度调整为 EE (93%)
+      hilited_candidate_text_color: 0xFFFFFF  # 选中项使用白色文字
+      hilited_comment_text_color: 0x7A7A7A    # 选中项注释颜色
+      shadow_color: 0x00000022            # 阴影颜色
+
+  app_options:
+    com.apple.Spotlight:
+      ascii_mode: true
+    com.apple.Terminal:
+      ascii_mode: true
+      no_inline: true
+    com.apple.dt.Xcode:
+      ascii_mode: true
+    com.microsoft.VSCode:
+      ascii_mode: true
+    com.apple.Safari:
+      ascii_mode: false
+      inline: true
+    com.google.Chrome:
+      inline: true
+    com.apple.Notes:
+      ascii_mode: false
+      inline: true 

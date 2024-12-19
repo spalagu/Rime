@@ -1,0 +1,71 @@
+__build_info:
+  rime_version: 1.11.2
+  timestamps:
+    squirrel: 1717774589
+    squirrel.custom: 1734610629
+app_options:
+  com.apple.Notes:
+    ascii_mode: false
+    inline: true
+  com.apple.Safari:
+    ascii_mode: false
+    inline: true
+  com.apple.Spotlight:
+    ascii_mode: true
+  com.apple.Terminal:
+    ascii_mode: true
+    no_inline: true
+  com.apple.dt.Xcode:
+    ascii_mode: true
+  com.google.Chrome:
+    inline: true
+  com.microsoft.VSCode:
+    ascii_mode: true
+chord_duration: 0.1
+config_version: 1.0
+keyboard_layout: last
+preset_color_schemes:
+  mac_light:
+    author: Assistant
+    back_color: 0xEEF7F7F7
+    border_color: 0xEEF7F7F7
+    candidate_text_color: 0x454545
+    comment_text_color: 0x8E8E8E
+    hilited_candidate_back_color: 0xEEF58B4B
+    hilited_candidate_text_color: 0xFFFFFF
+    hilited_comment_text_color: 0x7A7A7A
+    hilited_text_color: 0x000000
+    name: "仿 Mac 浅色"
+    shadow_color: 0x00000022
+    text_color: 0x424242
+recognizer:
+  patterns:
+    email: "^[A-Za-z][-_.0-9A-Za-z]*@.*$"
+    uppercase: "[A-Z][-_+.'0-9A-Za-z]*$"
+    url: "^(www[.]|https?:|ftp[.:]|mailto:|file:).*$|^[a-z]+[.].+$"
+show_notifications_when: appropriate
+style:
+  alpha: 0.92
+  base_offset: 6
+  border_height: 0
+  border_width: 0
+  candidate_format: "%c.%@ "
+  candidate_list_layout: linear
+  candidate_spacing: 24
+  color_scheme: mac_light
+  corner_radius: 6
+  font_face: "PingFangSC-Regular"
+  font_point: 14
+  horizontal: true
+  inline_preedit: true
+  label_font_face: "PingFangSC-Light"
+  label_font_point: 12
+  line_spacing: 5
+  margin_x: 12
+  margin_y: 8
+  min_height: 0
+  min_width: 160
+  shadow_offset_x: 0
+  shadow_offset_y: 3
+  shadow_size: 0.8
+  spacing: 10
