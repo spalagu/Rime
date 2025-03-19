@@ -7,11 +7,11 @@ patch:
 
   ascii_composer/good_old_caps_lock: true    # Caps只切换大小写，不再切换中英文
   ascii_composer/switch_key:
-    Caps_Lock: commit_code                   # Caps键仅切换大小写
-    Shift_L: commit_code                     # 左Shift临时切换中英文
-    Shift_R: commit_code                     # 右Shift键切换中英文
-    Control_L: noop                          # 左Control键，屏蔽该切换键
-    Control_R: noop                          # 右Control键，屏蔽该切换键
+    Caps_Lock: commit_code                # Caps键仅切换大小写
+    Shift_L: commit_code           # 左Shift临时切换中英文，回车上屏后恢复中文
+    Shift_R: commit_code            # 右Shift键上屏并切换到英文模式
+    Control_L: noop                 # 左Control键，屏蔽该切换键
+    Control_R: noop                 # 右Control键，屏蔽该切换键
 
   # 快捷键
   key_binder/bindings:
@@ -29,4 +29,5 @@ patch:
     - { when: composing, accept: Control+a, send: Home }          # Control+a光标移至首位
     - { when: composing, accept: Control+e, send: End }           # Control+e光标移至尾部
     - { when: composing, accept: Control+g, send: Escape }        # Control+g清除编码
-    - { when: composing, accept: Return, send: Escape }           # Return回车清码 
+    - { when: composing, accept: Control+Return, send: Escape }   # Control+Return清码
+    - { when: always, accept: Return, send: Commit }              # Return直接上屏输入的内容 
