@@ -1,0 +1,11 @@
+patch:
+  # 添加搜狗词库
+  "translator/dictionary": luna_pinyin.extended
+  
+  # 添加拼写运算规则，实现超级简拼和智能纠错（继承luna_pinyin的设置）
+  "speller/algebra/@before 0": 
+    __include: luna_pinyin:/speller/algebra
+  
+  # 扩展词库设置
+  "__include": 
+    - luna_pinyin:/veng 

@@ -1,0 +1,32 @@
+patch:
+  schema_list:
+    - schema: luna_pinyin_simp      # 朙月拼音简体
+    - schema: luna_pinyin           # 朙月拼音
+
+  menu/page_size: 9                 # 候选词数量由默认的5个增加到9个
+
+  ascii_composer/good_old_caps_lock: true    # Caps只切换大小写，不再切换中英文
+  ascii_composer/switch_key:
+    Caps_Lock: commit_code                   # Caps键仅切换大小写
+    Shift_L: commit_code                     # 左Shift临时切换中英文
+    Shift_R: commit_code                     # 右Shift键切换中英文
+    Control_L: noop                          # 左Control键，屏蔽该切换键
+    Control_R: noop                          # 右Control键，屏蔽该切换键
+
+  # 快捷键
+  key_binder/bindings:
+    # 翻页快捷键优化
+    - { when: has_menu, accept: Tab, send: Page_Down }            # Tab键翻页
+    - { when: paging, accept: minus, send: Page_Up }              # "-"上一页
+    - { when: has_menu, accept: equal, send: Page_Down }          # "="下一页
+    - { when: paging, accept: comma, send: Page_Up }              # ","上一页
+    - { when: has_menu, accept: period, send: Page_Down }         # "."下一页
+    - { when: paging, accept: bracketleft, send: Page_Up }        # "["上一页
+    - { when: has_menu, accept: bracketright, send: Page_Down }   # "]"下一页
+
+    # 方便操作的一些快捷键
+    - { when: composing, accept: Shift+Tab, send: Shift+Left }    # Shift+Tab键向左选拼音分词
+    - { when: composing, accept: Control+a, send: Home }          # Control+a光标移至首位
+    - { when: composing, accept: Control+e, send: End }           # Control+e光标移至尾部
+    - { when: composing, accept: Control+g, send: Escape }        # Control+g清除编码
+    - { when: composing, accept: Return, send: Escape }           # Return回车清码 

@@ -1,0 +1,30 @@
+# Rime dictionary
+# encoding: utf-8
+# 搜狗词库 - 城市地名词汇
+---
+name: luna_pinyin.sogou.urban
+version: "2025.03.19"
+sort: by_weight
+use_preset_vocabulary: false
+...
+
+北京	bei jing	1000
+上海	shang hai	990
+广州	guang zhou	980
+深圳	shen zhen	970
+杭州	hang zhou	960
+南京	nan jing	950
+成都	cheng du	940
+重庆	chong qing	930
+武汉	wu han	920
+西安	xi an	910
+天津	tian jin	900
+苏州	su zhou	890
+厦门	xia men	880
+长沙	chang sha	870
+郑州	zheng zhou	860
+青岛	qing dao	850
+大连	da lian	840
+宁波	ning bo	830
+无锡	wu xi	820
+福州	fu zhou	810 

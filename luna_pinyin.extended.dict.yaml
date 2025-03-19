@@ -1,0 +1,24 @@
+# Rime dictionary
+# encoding: utf-8
+
+---
+name: luna_pinyin.extended
+version: "2023.03.19"
+sort: by_weight
+use_preset_vocabulary: true
+import_tables:
+  - luna_pinyin
+  # 导入搜狗官网12个分类词库（待下载）
+  - luna_pinyin.sogou.urban      # 城市
+  - luna_pinyin.sogou.engineering # 工程
+  - luna_pinyin.sogou.agriculture # 农业
+  - luna_pinyin.sogou.humanities  # 人文
+  - luna_pinyin.sogou.society     # 社会
+  - luna_pinyin.sogou.life        # 生活
+  - luna_pinyin.sogou.art         # 艺术 
+  - luna_pinyin.sogou.medicine    # 医学
+  - luna_pinyin.sogou.games       # 游戏
+  - luna_pinyin.sogou.entertainment # 娱乐
+  - luna_pinyin.sogou.sports      # 运动
+  - luna_pinyin.sogou.nature      # 自然
+... 
