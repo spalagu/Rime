@@ -1,8 +1,8 @@
 __build_info:
-  rime_version: 1.11.2
+  rime_version: 1.13.0
   timestamps:
-    squirrel: 1717774589
-    squirrel.custom: 1734610629
+    squirrel: 1737643099
+    squirrel.custom: 1734666312
 app_options:
   com.apple.Notes:
     ascii_mode: false
@@ -45,7 +45,7 @@ recognizer:
     url: "^(www[.]|https?:|ftp[.:]|mailto:|file:).*$|^[a-z]+[.].+$"
 show_notifications_when: appropriate
 style:
-  alpha: 0.92
+  alpha: 1
   base_offset: 6
   border_height: 0
   border_width: 0
