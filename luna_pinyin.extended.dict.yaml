@@ -7,6 +7,7 @@ version: "2025.03.20"
 sort: by_weight
 use_preset_vocabulary: true
 import_tables:
+  - luna_pinyin                        # 基础词库
   # 导入搜狗词库
   - dicts/luna_pinyin.sogou.urban      # 城市地名
   - dicts/sogouw                       # 搜狗互联网词库
