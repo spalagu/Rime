@@ -1,0 +1,50 @@
+# Rime dictionary
+# encoding: utf-8
+# 搜狗词库 - 流行词汇词库
+---
+name: luna_pinyin.sogou.dict
+version: "2025.03.20"
+sort: by_weight
+use_preset_vocabulary: false
+...
+
+互联网 hu lian wang 1000
+人工智能 ren gong zhi neng 990
+区块链 qu kuai lian 980
+大数据 da shu ju 970
+云计算 yun ji suan 960
+物联网 wu lian wang 950
+直播 zhi bo 940
+短视频 duan shi pin 930
+自媒体 zi mei ti 920
+社交媒体 she jiao mei ti 910
+电子商务 dian zi shang wu 900
+共享经济 gong xiang jing ji 890
+新零售 xin ling shou 880
+移动支付 yi dong zhi fu 870
+虚拟现实 xu ni xian shi 860
+增强现实 zeng qiang xian shi 850
+元宇宙 yuan yu zhou 840
+数字货币 shu zi huo bi 830
+智能家居 zhi neng jia ju 820
+无人驾驶 wu ren jia shi 810
+机器学习 ji qi xue xi 800
+深度学习 shen du xue xi 790
+自然语言处理 zi ran yu yan chu li 780
+计算机视觉 ji suan ji shi jue 770
+知识图谱 zhi shi tu pu 760
+算法 suan fa 750
+数据挖掘 shu ju wa jue 740
+边缘计算 bian yuan ji suan 730
+5G 5 G 720
+量子计算 liang zi ji suan 710
+神经网络 shen jing wang luo 700
+比特币 bi te bi 690
+以太坊 yi tai fang 680
+NFT N F T 670
+元数据 yuan shu ju 660
+ChatGPT chat g p t 650
+生成式AI sheng cheng shi A I 640
+人脸识别 ren lian shi bie 630
+语音识别 yu yin shi bie 620
+智能客服 zhi neng ke fu 610 

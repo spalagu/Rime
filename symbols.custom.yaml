@@ -1,0 +1,10 @@
+patch:
+  punctuator:
+    half_shape:
+      "/": { commit: "/" }   # 半角模式下/直接上屏
+    full_shape:
+      "/": { commit: "/" }   # 全角模式下/直接上屏
+  
+  # 取消符号输入功能
+  symbols:
+    "/": null

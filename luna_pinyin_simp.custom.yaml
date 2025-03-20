@@ -6,6 +6,20 @@ patch:
   "speller/algebra/@before 0": 
     __include: luna_pinyin:/speller/algebra
   
-  # 扩展词库设置
-  "__include": 
-    - luna_pinyin:/veng 
+  # 修改标点符号配置，让/直接上屏
+  punctuator:
+    import_preset: default
+    half_shape:
+      "/": { commit: "/" }
+    full_shape:
+      "/": { commit: "/" }
+
+  # 直接重写整个recognizer部分，去掉punct模式
+  recognizer:
+    import_preset: default  # 先导入默认配置
+    patterns:               # 然后重新定义patterns，但不包含punct
+      email: "^[A-Za-z][-_.0-9A-Za-z]*@.*$"
+      reverse_lookup: "`[a-z]*'?$"
+      uppercase: "[A-Z][-_+.'0-9A-Za-z]*$"
+      url: "^(www[.]|https?:|ftp[.:]|mailto:|file:).*$|^[a-z]+[.].+$"
+      # veng: "^v.*$"  # 移除v模式 

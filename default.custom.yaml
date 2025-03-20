@@ -1,15 +1,26 @@
 patch:
   schema_list:
     - schema: luna_pinyin_simp      # 朙月拼音简体
-    - schema: luna_pinyin           # 朙月拼音
 
   menu/page_size: 9                 # 候选词数量由默认的5个增加到9个
 
+  # 修改标点符号配置，让/直接上屏
+  punctuator:
+    half_shape:
+      "/": { commit: "/" }      # 半角模式下/直接上屏
+    full_shape:
+      "/": { commit: "/" }      # 全角模式下/直接上屏
+
+  # 全局禁用特殊符号识别模式
+  recognizer:
+    patterns:
+      punct: ""
+
   ascii_composer/good_old_caps_lock: true    # Caps只切换大小写，不再切换中英文
   ascii_composer/switch_key:
-    Caps_Lock: commit_code                # Caps键仅切换大小写
-    Shift_L: commit_code           # 左Shift临时切换中英文，回车上屏后恢复中文
-    Shift_R: commit_code            # 右Shift键上屏并切换到英文模式
+    Caps_Lock: clear
+    Shift_L: commit_code
+    Shift_R: commit_code
     Control_L: noop                 # 左Control键，屏蔽该切换键
     Control_R: noop                 # 右Control键，屏蔽该切换键
 
